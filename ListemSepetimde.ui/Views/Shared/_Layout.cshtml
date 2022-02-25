@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <!--Aşşagıdakiler proje içinde bulunan meta uzantıları-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Donald - Bootstrap eCommerce Template">
+    <meta name="author" content="D-THEMES">
+    <title>@ViewBag.Title</title>
+    <!--Aşşagıdakiler proje içinde bulunan css uzantıları için-->
+    <link rel="icon" type="image/png" href="~/images/icons/favicon.png">
+    <script>
+        WebFontConfig = {
+            google: { families: ['Open+Sans:400,600,700', 'Poppins:400,500,600,700'] }
+        };
+        (function (d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = '~/js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/demo1.min.css">
+</head>
+<body>
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+            <div class="bounce4"></div>
+        </div>
+    </div>
+    @await Component.InvokeAsync("Header") <!--HeaderViewComponent'i kullanabilmek için yazdık-->
+    @RenderBody()
+    <footer class="footer appear-animate">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="demo1.html" class="logo-footer">
+                            <img src="~/images/logo-footer.png" alt="logo-footer" width="163" height="39" />
+                        </a>
+                        <!-- End of FooterLogo -->
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="widget widget-newsletter form-wrapper form-wrapper-inline">
+                            <div class="newsletter-info mx-auto mr-lg-2 ml-lg-4">
+                                <h4 class="widget-title">Subscribe to our Newsletter</h4>
+                                <p>Get all the latest information on Events, Sales and Offers.</p>
+                            </div>
+                            <form action="#" class="input-wrapper input-wrapper-inline">
+                                <input type="email" class="form-control" name="email" id="newsletter-email1"
+                                       placeholder="Email address here..." required />
+                                <button class="btn btn-primary btn-md ml-2" type="submit">
+                                    subscribe<i class="d-icon-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- End of Newsletter -->
+                    </div>
+                </div>
+            </div>
+            <!-- End of FooterTop -->
+            <div class="footer-middle">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <ul class="widget-body">
+                                <li>
+                                    <label>Phone:</label>
+                                    <a href="#">Toll Free (123) 456-7890</a>
+                                </li>
+                                <li>
+                                    <label>Email:</label>
+                                    <a href="#">mail@donald.com</a>
+                                </li>
+                                <li>
+                                    <label>Address:</label>
+                                    <a href="#">123 Street Name, City, England</a>
+                                </li>
+                                <li>
+                                    <label>WORKING DAYS/HOURS</label>
+                                </li>
+                                <li>
+                                    <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End of Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget ml-lg-4">
+                            <h4 class="widget-title">My Account</h4>
+                            <ul class="widget-body">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Custom Service</a></li>
+                                <li><a href="#">Terms &amp; Condition</a></li>
+                            </ul>
+                        </div>
+                        <!-- End of Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget ml-lg-4">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <ul class="widget-body">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Custom Service</a></li>
+                                <li><a href="#">Terms &amp; Condition</a></li>
+                            </ul>
+                        </div>
+                        <!-- End of Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget widget-instagram">
+                            <h4 class="widget-title">Instagram</h4>
+                            <figure class="widget-body row">
+                                <div class="col-3">
+                                    <img src="images/instagram/01.jpg" alt="instagram 1" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/02.jpg" alt="instagram 2" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/03.jpg" alt="instagram 3" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/04.jpg" alt="instagram 4" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/05.jpg" alt="instagram 5" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/06.jpg" alt="instagram 6" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/07.jpg" alt="instagram 7" width="64" height="64" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/instagram/08.jpg" alt="instagram 8" width="64" height="64" />
+                                </div>
+                            </figure>
+                        </div>
+                        <!-- End of Instagram -->
+                    </div>
+                </div>
+            </div>
+            <!-- End of FooterMiddle -->
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <figure class="payment">
+                        <img src="images/payment.png" alt="payment" width="159" height="29" />
+                    </figure>
+                </div>
+                <div class="footer-center">
+                    <p class="copyright">Donald eCommerce &copy; 2020. All Rights Reserved</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link social-facebook fab fa-facebook-f"></a>
+                        <a href="#" class="social-link social-twitter fab fa-twitter"></a>
+                        <a href="#" class="social-link social-linkedin fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of FooterBottom -->
+        </div>
+    </footer>
+    <div class="sticky-footer sticky-content fix-bottom">
+        <a href="demo1.html" class="sticky-link active">
+            <i class="d-icon-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="shop.html" class="sticky-link">
+            <i class="d-icon-volume"></i>
+            <span>Categories</span>
+        </a>
+        <a href="wishlist.html" class="sticky-link">
+            <i class="d-icon-heart"></i>
+            <span>Wishlist</span>
+        </a>
+        <a href="account.html" class="sticky-link">
+            <i class="d-icon-user"></i>
+            <span>Account</span>
+        </a>
+        <div class="dropdown cart-dropdown dir-up">
+            <a href="cart.html" class="sticky-link cart-toggle">
+                <i class="d-icon-bag"></i>
+                <span>Cart</span>
+            </a>
+            <!-- End of Cart Toggle -->
+            <div class="dropdown-box">
+                <div class="product product-cart-header">
+                    <span class="product-cart-counts">2 items</span>
+                    <span><a href="cart.html">View cart</a></span>
+                </div>
+                <div class="products scrollable">
+                    <div class="product product-cart">
+                        <div class="product-detail">
+                            <a href="product.html" class="product-name">Solid Pattern In Fashion Summer Dress</a>
+                            <div class="price-box">
+                                <span class="product-quantity">1</span>
+                                <span class="product-price">$129.00</span>
+                            </div>
+                        </div>
+                        <figure class="product-media">
+                            <a href="#">
+                                <img src="images/cart/product-1.jpg" alt="product" width="90" height="90" />
+                            </a>
+                            <button class="btn btn-link btn-close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </figure>
+                    </div>
+                    <!-- End of Cart Product -->
+                    <div class="product product-cart">
+                        <div class="product-detail">
+                            <a href="product.html" class="product-name">Mackintosh Poket Backpack</a>
+                            <div class="price-box">
+                                <span class="product-quantity">1</span>
+                                <span class="product-price">$98.00</span>
+                            </div>
+                        </div>
+                        <figure class="product-media">
+                            <a href="#">
+                                <img src="images/cart/product-2.jpg" alt="product" width="90" height="90" />
+                            </a>
+                            <button class="btn btn-link btn-close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </figure>
+                    </div>
+                    <!-- End of Cart Product -->
+                </div>
+                <!-- End of Products  -->
+                <div class="cart-total">
+                    <label>Subtotal:</label>
+                    <span class="price">$42.00</span>
+                </div>
+                <!-- End of Cart Total -->
+                <div class="cart-action">
+                    <a href="checkout.html" class="btn btn-dark"><span>Checkout</span></a>
+                </div>
+                <!-- End of Cart Action -->
+            </div>
+            <!-- End of Dropdown Box -->
+        </div>
+    </div>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/parallax/parallax.min.js"></script>
+    <script src="~/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="~/vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="~/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        function AddToBasket(productId, count) {
+            $.ajax(
+                {
+                    url: '/Basket/AddToBasket',
+                    method: 'POST',
+                    data: { count: count, productId: productId },
+                    success: (data) => {
+                        console.log(data);
+                        RefreshBasket();
+                    },
+                    error: (data) => { console.log(data);; }
+                });
+        }
+        $(document).ready(() => {
+            RefreshBasket();
+        });
+        function RefreshBasket() {
+            $.ajax(
+                {
+                    url: '/Basket/RefreshBaketCount',
+                    method: 'POST',
+                    success: (data) => {
+                        $('#bsk').html(data);
+                    },
+                    error: (data) => { console.log(data);; }
+                });
+        }
+    </script>
+
+    <script src="~/js/main.js"></script>
+    <!--Yukarıdakiler projeye ait script uzantıları.-->
+    @RenderSection("script", false)
+</body>
+</html>

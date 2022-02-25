@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<center>
+    <div class="login-popup">
+        <div class="form-box">
+            <div class="tab tab-nav-simple tab-nav-boxed form-tab">
+                <ul class="nav nav-tabs nav-fill" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#signin">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Account" asp-action="Register">Üye Ol</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="signin">
+                        <form method="post" asp-controller="Account" asp-action="Login">
+                            <div class="form-group">
+                                <label for="username">Kullanıcı Adı:</label>
+                                <input type="text" class="form-control" id="username" name="userName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Password:</label>
+                                <input type="password" class="form-control" id="pass" name="password" />
+                            </div>
+                            <div class="form-footer">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" class="custom-checkbox" id="signin-remember"
+                                           name="signin-remember" />
+                                    <label class="form-control-label font-secondary" for="signin-remember">
+                                        Remember
+                                        me
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block" type="submit">Giriş Yap</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
